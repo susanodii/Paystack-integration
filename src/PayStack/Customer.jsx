@@ -1,4 +1,4 @@
-import { Secret, Secrets } from '../config'
+import { Secret} from '../config'
 
 import React from 'react'
 import axios from 'axios'
@@ -13,6 +13,7 @@ const Customer = () => {
 
     const handleSubmit =async function(form){
 form.preventDefault()
+alert('success')
     
 try {
     

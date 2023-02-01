@@ -630,6 +630,7 @@ input[type=text],[type=tel], [type=email], select {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.5s ease-in;
 }
 
 .pay-btn:hover {
@@ -641,3 +642,31 @@ input[type=text],[type=tel], [type=email], select {
   background-color: #f2f2f2;
   padding: 20px;
 } */
+/* BECOME A CUUSTOMER */
+.become-our-customer-button{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 1rem;
+ gap: 2rem;
+ font-size: 20px;
+  
+}
+
+.click-become-customer{
+  
+  background: rgb(224, 246, 253);
+  color: black;
+  /* padding: 14px 20px;
+  margin: 8px 0; */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+
+}
+
+.click-become-customer:hover{
+  background-color: white;
+transition: 0.5s ease-in;
+}

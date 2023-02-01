@@ -37,6 +37,9 @@ fetchProducts()
     // 👇️ navigate to /payment
     navigate('/Payment');
   };
+
+
+  
   
     return (
    
