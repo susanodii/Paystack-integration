@@ -16,7 +16,7 @@ const [lastname, setLastname] = useState("")
 
 const PayWithPaystack= function(e){
  e.preventDefault()
- alert(1)
+//  alert(1)
  const paystack = new PaystackPop()
 //  const patstack = new Paystack()
 paystack.newTransaction({

@@ -13,7 +13,7 @@ const Customer = () => {
 
     const handleSubmit =async function(form){
 form.preventDefault()
-alert('success')
+alert('Successful Registration')
     
 try {
     
