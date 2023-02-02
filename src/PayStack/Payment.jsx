@@ -37,7 +37,7 @@ paystack.newTransaction({
   return (
   
     <div className='form-payement-container'>
-    <form >
+    <form  className='form-pay-submit' >
         
     <label htmlFor="email">Email Address</label>
         <input type="email" value={email} onChange={(e) =>setEmail(e.target.value)} id="email-address" placeholder="Your email.." required />

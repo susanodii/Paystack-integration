@@ -604,7 +604,7 @@ justify-content: space-around;
   margin: 0;
 }
 
-form{
+form {
   margin-left: 32rem;
   margin-right: 32rem;
   background-color: rgba(0, 0, 0, 0.4);
@@ -612,7 +612,7 @@ form{
 }
  
 input[type=text],[type=tel], [type=email], select {
-  width: 100%;
+  width: 100%; 
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -669,4 +669,94 @@ input[type=text],[type=tel], [type=email], select {
 .click-become-customer:hover{
   background-color: white;
 transition: 0.5s ease-in;
+}
+
+
+@media (max-width: 500px){
+  .form-payement-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+  }
+  form.form-pay-submit{
+    
+    
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width:130px;  
+  
+   }
+    
+    input[type=text],[type=tel], [type=email], select{
+    /* border: 2px solid purple;  */
+    padding-left: initial;
+    padding-right: initial;
+        width: 100%;}
+  
+}
+
+
+
+@media (max-width: 768px){
+  .form-payement-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+  }
+  form.form-pay-submit{
+    
+    
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width:350px;  
+  
+   }
+    
+    input[type=text],[type=tel], [type=email], select{
+    /* border: 2px solid purple; */
+    padding-left: initial;
+    padding-right: initial;
+        width: 100%;}
+  
+}
+
+
+@media (max-width: 900px){
+  .form-payement-container{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  form{
+    
+    
+    padding-left: initial;
+      /* padding-right: 1rem; */
+      width: 100%;
+       margin-left: 5rem; 
+  
+  
+   }
+    
+    input[type=text],[type=tel], [type=email], select{
+    /* border: 2px solid purple; */
+    padding-left: initial;
+    padding-right: initial;
+        width: 100%;}
+}
+
+@media (max-width: 1400px){
+  form{
+    margin-left: 20rem;
+    margin-right: 20rem;
+    /* border: 2px solid yellow; */
+    padding-left: 3rem;
+      padding-right: 3rem;
+  
+  
+   }
+    
+    input[type=text],[type=tel], [type=email], select{
+    
+        width: 100%;}
+      
 }

@@ -48,7 +48,7 @@ if (res){
     return (
   
     <div className='form-payement-container'>
-    <form onSubmit={handleSubmit}>
+    <form className='form-pay-submit' onSubmit={handleSubmit} >
         
     <label htmlFor="email">Email Address</label>
         <input type="email" id="email-address" placeholder="Your email.." onChange={(e)=>{setEmail(e.target.value)}} required />
