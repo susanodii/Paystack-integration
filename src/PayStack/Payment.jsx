@@ -1,9 +1,7 @@
+import PaystackPop from "@paystack/inline-js"
 import React from 'react'
 import { useNavigate, } from 'react-router-dom';
-import PaystackPop from "@paystack/inline-js"
 import { useState } from 'react';
-
-
 
 const Payment = () => {
 
@@ -21,10 +19,21 @@ const PayWithPaystack= function(e){
 //  const patstack = new Paystack()
 paystack.newTransaction({
   key:"pk_test_f8bcd4d1072f816d0de4893fc528ef98f1928b78",
-  amount:amount,
+  amount:amount * 100,
   email,
   firstname,
-  lastname
+  lastname,
+  onSuccess(transaction){
+    let message = `Payment Complete! Reference ${transaction.reference}`
+ alert(message)
+ setEmail('')
+ setamount('')
+ setFirstname('')
+ setLastname('')
+  },
+  onCancel(){
+    alert("Transaction Cancelled")
+  }
 })
 }
  
